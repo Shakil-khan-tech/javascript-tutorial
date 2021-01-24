@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JS switch</title>
+</head>
+<body>
+	<script>
+		var result= parseInt(prompt(result));
+		//var result = 20;
+		var display ;
+		switch(true){
+			case result<10:
+			display ="	fail"
+			break;
+			case result<30: 
+			display ="good";
+			break;
+			case result >=30:
+			display ="excellent"
+			break;
+		}
+		document.write(display);
+	</script>
+</body>
+</html>

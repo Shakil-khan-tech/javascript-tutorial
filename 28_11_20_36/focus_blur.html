@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		function fillit() {
+			document.myform.email.value = "";
+			document.myform.email.style.backgroundColor = "yellow";
+			document.myform.email.style.color = "red";
+			// body...
+		}
+		function clearit() {
+			document.myform.email.value = "";// body...
+			document.myform.name.style.backgroundColor = "red";
+		}
+	</script>
+	<form action="" name="myform">
+		<input type="email" name="email" onfocus="fillit()" onblur="clearit()"><br>
+		<input type="text" name="name" onfocus="">
+	</form>
+</body>
+</html>

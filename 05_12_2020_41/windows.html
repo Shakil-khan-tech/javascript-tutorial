@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JS windows</title>
+</head>
+<body>
+	<h1>window open move by</h1>
+	<button onclick="func()">open</button>
+	<button onclick="movewin()">Move</button>
+	<button onclick="cls()">close</button>
+	<script>
+		function func(argument) {
+			mywindow= window.open("","mywindow","height=300,width=400");
+			mywindow.document.write("this is new window");
+			// body...
+		}
+		function movewin(argument) {
+			mywindow.moveBy(100,150);
+			mywindow.focus();
+			// body...
+		}
+		function cls(argument) {
+			mywindow.close();
+			// body...
+		}
+	</script>
+</body>
+</html>

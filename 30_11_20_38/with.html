@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JS with</title>
+</head>
+<body>
+	<div id="show">
+	<script>
+		function details() {
+			with (document.myform) {
+			var fn = fnm.value;
+			var add =address.value;
+			var gen = gender.value;// body...
+		}
+		var output = fn +"\n"+ add +"\n"+ gen;
+		document.getElementById('show').innerHTML = output;
+	}
+	</script>
+
+	<form action="" name="myform">
+		Fullname: <br><input type="text" name="fnm"><br>
+		Address: <br><textarea name="address" cols="30" rows="10"></textarea><br>
+	</div>
+		Gender: <br>
+		Male<input type="radio" name="gender" value="Male"><br>
+		Female<input type="radio" name="gender" value="Female"><br><br>
+		<button type="button" onclick="details()">Show details</button>
+	</form>
+</body>
+</html>

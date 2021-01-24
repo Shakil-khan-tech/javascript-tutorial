@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JS if else</title>
+</head>
+<body>
+	<script>
+		var x = 10;
+		if(x){
+			document.write("x variable is set.");
+		} 
+			document.write("<br>");
+	</script>
+	<script>
+		var x = 10;
+		var y = 20;
+		if(x==y){
+			document.write("x and y are equal.");
+		} else{
+			document.write("x and y are not equal.");
+		}
+		document.write("<br>");
+	</script>
+	<script>
+		var x = 10;
+		var y = 20;
+		if(x!=y){
+			document.write("x and y are not equal.");
+		} else{
+			document.write("x and y are equal.");
+		}
+		document.write("<br>");
+	</script>
+	<script>
+		var x = 10;
+		var y = 20;
+		if(x>y){
+			document.write("x is greater than y.");
+		} else{
+			document.write("x is not greater than y.");
+		}
+		document.write("<br>");
+	</script>
+	<script>
+		var x = 20;
+		var y = 20;
+		if(x>y){
+			document.write("x is greater than y.");
+		} else if(x<y){
+			document.write("x is  smaller than y.");
+		} else {
+			document.write("x and y are equal.")
+		}
+		document.write("<br>");
+	</script>
+	<script>
+		var x = 30;
+		var y = 20;
+		if(x<y && x!=y){//and &&
+			document.write("x is smaller than y and they are not equal.");
+		} else {
+			document.write("x is greater than y");
+		}
+		document.write("<br>");
+	</script>
+	<script>
+		var x = 30;
+		var y = 20;
+		if(x<y || x!=y){//or ||
+			document.write("x is smaller than y or they are not equal.");
+		} else {
+			document.write("x is greater than y");
+		}
+		document.write("<br>");
+	</script>
+	<script>
+		var x = 50;
+		var y = 60;
+		if(x>y && x==y){// or
+			document.write("x is greater than y and they are equal.");
+		} else if(y>x){
+			document.write("y is greater than x")
+		} else {
+			document.write("x is smaller than y or equal");
+		}
+		document.write("<br>");
+	</script>
+	<script>//ANOTHER TECHNIC
+		var x = 20;
+		var y = 10;
+		var z =(x <= y);
+		if(z) {
+			var result ="x is smaller than y or equal"
+		} else {
+			var result ="y is smaller than x"
+		}
+		document.write(result);
+	</script>
+</body>
+</html>

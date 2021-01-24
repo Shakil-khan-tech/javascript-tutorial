@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JS form</title>
+</head>
+<body>
+	<script>
+		function message(x) {
+			document.forms[0].element[0].value= x;
+			// body...
+		}
+	</script>
+	<form action="">
+		<input type="button" value="green" onclick="document.bgColor='green'" onmousemove="message('green')">
+		<input type="button" value="red" onclick="document.bgColor='red'" onmousemove="message('red')">
+		<input type="button" value="blue" onclick="document.bgColor='blue'" onmousemove="message('blue')">
+		<input type="button" value="hotpink" onclick="document.bgColor='hotpink'" onmousemove="message('hotpink')">
+		
+</body>
+</html>

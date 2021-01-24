@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JS Array</title>
++</head>
+<body>
+	<script>
+		var students = new Array("iliash","maruf","siam","ismail")
+		students.pop(); //drop an element from last
+		document.write(students);
+		document.write("<br>");
+		students.push("amir,meherab");//add element in the last
+		document.write(students);
+		document.write("<br>");
+		students.shift();//remove an element in the first
+		document.write(students);
+		document.write("<br>");
+		students.unshift("shakib,shakil");//add some element in the first
+		document.write(students);
+		document.write("<br>")
+		var fruits = ["banana","orange","apple","mango","grape"]
+		document.write(fruits);
+		document.write("<br>")
+		fruits.splice(1,4,"lemon","kiwi")//add/remove as my wish
+		document.write(fruits);
+		document.write("<br>");
+		document.write("<br>");
+		var trees = new Array("oak","pine","elm");//type of object
+		var bigbush = trees.join(" % ");
+		document.write(bigbush);
+		//alert(typeof(bigbush));//type of string
+		document.write("<br>");
+		document.write("<br>");
+		var x = 200;
+		var r =x.toString();
+		//alert(typeof(r));
+
+		document.write("<br>");
+		document.write("<br>");
+		var trees = new Array("mango","apple","banana");
+		var moretrees=trees.concat("grape","jackfruit");
+		document.write(moretrees);
+		document.write("<br>");document.write("<br>");
+		var trees = new Array("mango","apple","banana");
+		var moretrees=trees.concat("grape","jackfruit");
+		for ( i =0; i<moretrees.length; i++){
+			x =i+ 1;
+			document.write(x + "-" + moretrees[i] + "<br>");
+		}
+		document.write("<br>");
+		document.write("<br>");
+		var trees = new Array("mango","apple","banana");
+		var moretrees=trees.concat("grape","jackfruit");
+		for ( i =0; i<moretrees.length-1; i++){
+			x = i + 1;
+			document.write(x + "-" + moretrees[x] + "<br>");
+		}
+	</script>
+
+</body>
+</html>

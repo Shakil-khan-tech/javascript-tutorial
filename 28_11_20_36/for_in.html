@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JS for in loop</title>
+</head>
+<body>
+
+	<script>
+		var x = "<ol>";
+		var fruits = ["mango","orange","apple","grape"];
+
+		for( var counter in fruits) {
+			x +="<li>" + fruits[counter] + "</li>";
+		}
+		x += "</ol>";
+		document.write(x);
+	</script>
+
+</body>
+</html>

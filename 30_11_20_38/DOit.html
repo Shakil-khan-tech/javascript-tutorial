@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body onload=>
+
+	<script>
+		function doit() {
+			document.frm.inp.value = "shakil khan";
+			document.frm.btn.value = "its my name";
+		}
+	</script>
+	<form action="" name="frm">
+		<input type="text" name="inp">
+		<input type="button" name="btn" value="submit" onclick="doit()">
+		<button onclick="javascript:document.frm.reset()">Reset</button>
+	</form>
+</body>
+</html>

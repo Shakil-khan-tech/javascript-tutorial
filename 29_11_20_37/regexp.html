@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JS Regular expression</title>
+</head>
+<body>
+	<script>
+		var work = "working with Javascript is hard work but rewarding work";
+		var play = work.replace(/work/gi,"play");//Regular expression
+		document.write("<p>" +work+ "<p>" + "<b>"+play+ "</b>");
+	</script>
+	<script>
+		var work = "working with Javascript is hard work but rewarding work";
+		var play = work.match(/work/gi);//Regular expression
+		document.write("<p>" +work+ "<p>" + "<b>"+play+ "</b>");
+	</script>
+	<script>
+		var work = "www.javascript.com";
+		var play = work.slice(14);//Regular expression
+		document.write("<p>" +work+ "<p>" + "<b>"+play+ "</b>");
+		var play1 = work.search(/.com/);
+		document.write("<p>" +work+ "<p>" + "<b>"+play1+ "</b>");
+		var play2 = work.slice(work.search(/javascript/));
+		document.write("<p>" +work+ "<p>" + "<b>"+play2+ "</b>");
+	</script>
+	<script>
+		var work = "working with Javascript is hard work but rewarding work";
+		var play = work.split(/ /gi);//Regular expression
+		document.write("<p>" +work+ "<p>" + "<b>"+play+ "</b>");
+		document.write("<br>");
+		document.write(play[2]);
+	</script>
+</body>
+</html>

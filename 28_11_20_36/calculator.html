@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		var n1, n2, sum, mul, div, mod;
+		function sum() {
+			n1 = parseInt(document.myform.num1.value);// body...
+			n2 = parseInt(document.myform.num2.value);// body...
+			sum = n1 + n2;
+			document.write(sum);
+		}
+		function sub() {
+			n1 = parseInt(document.myform.num1.value);// body...
+			n2 = parseInt(document.myform.num2.value);// body...
+			sub = n1 - n2;
+			document.write(sub);
+		}
+		function mul() {
+			n1 = parseInt(document.myform.num1.value);// body...
+			n2 = parseInt(document.myform.num2.value);// body...
+			mul = n1 * n2;
+			document.write(mul);
+		}
+		function div() {
+			n1 = parseInt(document.myform.num1.value);// body...
+			n2 = parseInt(document.myform.num2.value);// body...
+			div = n1 / n2;
+			document.write(div);
+		}
+	</script>
+	<form action="" name="myform">
+		<input type="number" name="num1"><br><br>
+		<input type="number" name="num2"><br><br>
+		<input type="submit" value="sum" onclick="sum()">
+		<input type="submit" value="sub" onclick="sub()">
+		<input type="submit" value="mul" onclick="mul()">
+		<input type="submit" value="div" onclick="div()">
+	</form>
+</body>
+</html>

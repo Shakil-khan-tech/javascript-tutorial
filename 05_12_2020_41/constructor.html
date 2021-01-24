@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JS constructor</title>
+</head>
+<body>
+	<script>
+		function myfunc(x,y,z) {
+			this.stname =x;
+			this.shop = y;
+			this.product =z;
+			// body...
+		}
+		var bloom = new myfunc("Agora","Dhanmondi","Mobile");
+		var display= bloom.stname +"<br>";
+		display += bloom.shop +"<br>";
+		display += bloom.product +"<br>";
+
+		document.write(display);
+	</script>
+</body>
+</html>

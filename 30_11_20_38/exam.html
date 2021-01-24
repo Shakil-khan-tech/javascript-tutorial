@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		function func() {
+			var y = document.frm.fn.value;
+			var z = document.frm.ln.value;
+			var w =document.frm.address.value;
+			var display = y+"\n"+z+"\n"+w;
+			var x =window.open("","mywindow","width=400,height=300");
+			x.document.write(display);// body...
+		}
+		function winclose() {
+			window.close();// body...
+		}
+	</script>
+	<form action="" name="frm">
+		firstname: <br><input type="text" name="fn">
+		<br>lastname: <br><input type="text" name="ln">
+		<br>Address: <br><textarea name="address" id="" cols="30" rows="10"></textarea>
+		<br><br><button onclick="func()">submit</button>
+		<br><button onclick="winclose()">close</button>
+	</form>
+</body>
+</html>

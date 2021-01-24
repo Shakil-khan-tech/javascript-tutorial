@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<form action="" name="form1">
+		<label for="">MCQ:</label><br>
+		<input type="number" name="n1"><br>
+		<label for="">Descriptive:</label><br>
+		<input type="number" name="n2"><br>
+		<label for="">Evidence:</label><br>
+		<input type="number" name="n3"><br>
+		<button name="btn" onclick="getr()" style="background-color:hotpink;">RESULT</button>
+	</form>
+	<script>
+		function getr(){
+			var x = document.form1.n1.value;
+			var y = document.form1.n2.value;
+			var z = document.form1.n3.value;
+			if(x>=80 && y>=60 && z>=60){
+				document.write("You have passed");
+			}
+			else{
+				document.write("You have failed");
+			}
+		}
+	</script>
+</body>
+</html>

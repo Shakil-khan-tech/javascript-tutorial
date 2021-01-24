@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+			var ah =self.navigator.appCodeName;
+			var aw =self.navigator.appName;
+			var d =self.navigator.appVersion;
+			var h =self.navigator.platform;
+			var w =self.navigator.userAgent;
+
+			var display = "Codename= "+ah+"\n"+"<br>browser name= "+aw+"\n"+"<br>version number= "+d+"\n"+"<br>my platform is= "+h+"\n"+"<br>my user agent is= "+w;
+			document.write(display);
+	</script>
+	<h1>default status</h1>
+	<script>
+		function openwin() {
+		var x =window.open("","my window","width=400,height=300");
+
+		x.document.write("hello");
+	}
+	</script>
+	<button onclick="openwin()">Open window</button>
+	<script>
+	function closewin() {
+		window.close();
+	}
+	</script>
+	<button onclick="closewin()">Close</button>
+</body>
+</html>

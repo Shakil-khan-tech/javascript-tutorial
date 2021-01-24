@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JS Form</title>
+</head>
+<body>
+	<script>
+		function welcome(){
+			var fn = document.personal_info.fname.value;
+			var ln = document.personal_info.lname.value;
+			var email = document.personal_info.email.value;
+			var address = document.personal_info.address.value;
+			var gender = document.personal_info.gender.value;
+			var round = document.personal_info.Round.value;
+			
+			var checkedValue = [];
+
+			var inputElements = document.getElementsByClassName('hobbies');
+
+		for(var i=0; i<inputElements.length; i++){
+			if(inputElements[i].checked){
+				checkedValue.push(inputElements[i].value)
+			}
+		}
+
+			var full ="welcome :" + fn + " " + ln + "<br> Email:" + email + "<br> Address:"  + address + "<br> Gender:"  + gender + "<br> Round:"  + round  + "<br> Hobbies:" + checkedValue;
+			document.write(full);
+		}
+	</script>
+	<form action="" name="personal_info">
+		<label for="">First name:</label><br>
+		<input type="text" name="fname" placeholder="Enter your first name"><br>
+		<label for="">Last name:</label><br>
+		<input type="text" name="lname" placeholder="Enter your last name"><br>
+		<label for="">Email:</label><br>
+		<input type="email" name="email" placeholder="Enter your email"><br>
+		<label for="">Address:</label><br>
+		<textarea name="address" cols="30" rows="10" placeholder="Enter your address"></textarea><br>
+		<label for="">Gender:</label><br>
+		Male<input type="radio" name="gender" value="male"><br>
+		Female<input type="radio" name="gender" value="female"><br>
+		<label for="">Hobbies:</label>
+		Football<input type="checkbox" class="hobbies" value="football">
+		Cricket<input type="checkbox" class="hobbies" value="cricket">
+		Chess<input type="checkbox" class="hobbies" value="chess"><br>
+		<label for="">Round:</label>
+		<select name="Round">
+			<option value="" hidden="">select</option>
+			<option value="43">43</option>
+			<option value="44">44</option>
+			<option value="45">45</option>
+			<option value="46">46</option>
+		</select><br>
+		<button onclick="welcome()">SEND</button>
+	</form>
+</body>
+</html>

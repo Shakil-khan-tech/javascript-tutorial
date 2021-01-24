@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>js loop</title>
+	<style>
+		.players{
+			background-color: #7DCFD4;
+			color: #120DD7;
+			border: 2px solid moccasin;
+			padding: 4px;
+			font-size: 25px;
+			text-align: center;
+
+		}
+		h2{
+			background-color: palegreen;
+			color: hotpink;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<h2>BD PLAYERS</h2>
+	<script>
+		var players = new Array("Shakib","Tamim","Rubel","Mashrafi","Mahmudullah");
+		for(var i=0; i<players.length; i++){
+			document.write("<div class='players'>");
+			document.write(players[i]);
+			document.write("</div>");
+		}
+	</script>
+	<script>
+		var fruits = new Array("Apple","Mango","Banana","Grape");
+
+		for(var i=0; i<fruits.length; i++){
+			document.write(fruits[i] + "<br>");
+		}
+	</script><hr>
+	<script>
+		for(var i= 0; i<11; i++){
+			document.write(i);
+		}
+	</script><hr>
+	<script>
+		for(var i= 50; i<=100; i++){
+			document.write(i + "<br>");
+		}
+	</script>
+</body>
+</html>
